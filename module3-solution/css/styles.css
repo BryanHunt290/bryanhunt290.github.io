@@ -1,0 +1,142 @@
+* { box-sizing: border-box;
+    margin: 0;
+    padding: 0;}
+
+body { font-size: 16px;
+color: blue;
+background-color: #61122f;
+font-family: blue;
+width: 100%;
+}
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+#header-nav {
+background-color: #f6b319;
+border-radius: 0;
+border: 0;
+position: relative;
+}
+
+#logo-img {
+    background-image: url(img/logo.jpeg) no-repeat;
+    width: 150 px;
+    height: 150 px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+}
+.navbar-brand {
+    float: left;
+    padding: 25px;
+    position: relative;
+    top: 0;
+}
+.navbar-brand h1 { /* restaraunt name */
+    font-size: 2.5em;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px #fff;
+    color: #61122f;
+    margin-bottom: 0;
+    line-height: .75;
+    position: relative;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+.navbar-brand p { /* restaraunt slogan */
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 1px 1px 3px #fff;
+    color: #61122f;
+    margin-top: 0;
+    line-height: .75;
+}
+.navbar-brand p span {
+    vertical-align: middle;
+}
+.navbar-brand img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-top: 5px;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+#nav-list {
+    margin-top: 10px;
+}
+#nav-list a {
+    color: #951c49;
+    text-align: center;
+}
+#nav-list a:hover {
+    background: #575757;
+}
+#nav-list a span {
+    font-size: 1.8em;
+    text-align: right;
+    float: right;
+}
+#phone {
+    margin-top: 5px;
+}
+#phone a {  /* Phone number */
+    text-align: right;
+    padding-bottom: 0;
+}
+#phone div { /* we deliver */
+    color: #557c3e;
+    text-align: right;
+    padding-right: 15px;
+}
+.navbar-toggler, .navbar-toggler-icon .icon-bar {
+    border: 1px solid blue;
+}
+.navbar-toggler {
+    clear: both;
+    float: right;
+    margin-top: -30px;
+}
+/*end header*/
+
+/******* large devices only  ****/
+@media ( min-width: 1200px) {     
+    }
+
+    /**** medium devices ****/
+    @media (min-width: 992px) and (max-width: 1199px) {#logo-img { background: url("img/logo.jpeg") no-repeat; width: 100px; height: 100px; margin: 5px 5px 5px 0; position: relative;}
+    .navbar-brand {
+        position: relative;
+}
+
+    /****  small devices only *****/
+    @media (min-width: 768px) and (max-width: 991px) {
+    }
+
+    /***** Extra small devices only  ****/
+    @media (max-width: 767px) { 
+        .navbar-brand {
+            padding-top: 10px;
+            height: 80px;
+        }
+        .navbar-brand h1 { /*restaraubt name */
+        padding-top: 10px;
+    font-size: 5vw;
+}
+.navbar-brand p { /* 5 star rating */
+text-transform: uppercase;
+font-size: .6em;
+margin-top: 12px;
+}
+.navbar-brand p img { /* star pic */
+height: 20px;
+}
+    }
